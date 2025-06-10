@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta content="noindex" name="robots" />
+    <title>Envato</title>
+
+    <link rel="icon" href="./assets/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="assets/favicon.svg" sizes="any" type="image/svg+xml"/>
+
+    <style>
+        :root {
+  --font-family-wide: "PolySansWide", "PolySans", "Inter", -apple-system,
+    "BlinkMacSystemFont", "Segoe UI", "Fira Sans", "Helvetica Neue", "Arial",
+    sans-serif;
+  --font-family-regular: "PolySans", "Inter", -apple-system,
+    "BlinkMacSystemFont", "Segoe UI", "Fira Sans", "Helvetica Neue", "Arial",
+    sans-serif;
+  --font-family-monospace: "Courier New", monospace;
+
+  --font-size-10x: 6rem;
+  --font-size-9x: 4.5rem;
+  --font-size-8x: 3rem;
+  --font-size-7x: 2.25rem;
+  --font-size-6x: 1.875rem;
+  --font-size-5x: 1.5rem;
+  --font-size-4x: 1.125rem;
+  --font-size-3x: 1rem;
+  --font-size-2x: 0.875rem;
+  --font-size-1x: 0.75rem;
+
+  --font-weight-bulky: 700;
+  --font-weight-median: 600;
+  --font-weight-neutral: 400;
+
+  --color-white: #fff;
+  --color-grey-100: #ccc;
+  --color-grey-1000: #191919;
+  --color-jaffa-25: #fff5ed;
+  --roundness-extra-round: 16px;
+
+  --spacing-7x: 64px;
+  --spacing-6x: 40px;
+  --spacing-5x: 32px;
+  --spacing-4x: 24px;
+  --spacing-3x: 16px;
+  --spacing-2x: 8px;
+  --spacing-1x: 4px;
+  --spacing-none: 0px;
+
+  --color-border-tertiary: var(--color-grey-100);
+  --color-content-primary: var(--color-grey-1000);
+  --color-interactive-secondary-hover: var(--color-grey-1000);
+
+  @font-face {
+    font-family: "PolySans";
+    font-weight: 400;
+    font-display: swap;
+    src: url("../../assets/fonts/PolySans-Neutral.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "PolySans";
+    font-weight: 600;
+    font-display: swap;
+    src: url("../../assets/fonts/PolySans-Median.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "PolySans";
+    font-weight: 700;
+    font-display: swap;
+    src: url("../../assets/fonts/PolySans-Median.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "PolySansWide";
+    font-weight: 700;
+    font-display: swap;
+    src: url("../../assets/fonts/PolySans-Bulky.woff2") format("woff2");
+  }
+}
+
+body {
+  min-height: 100vh;
+  margin: var(--spacing-none);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-regular);
+  font-weight: var(--font-weight-neutral);
+  font-size: var(--font-size-3x);
+  background-color: var(--color-jaffa-25);
+  line-height: var(--spacing-4x);
+}
+
+.link {
+  color: var(--color-interactive-secondary-hover);
+  text-underline-offset: 25%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.box {
+  border: 1px solid var(--color-border-tertiary);
+  background-color: var(--color-white);
+  flex: 1 1 auto;
+  max-width: 560px;
+  border-radius: var(--roundness-extra-round);
+  overflow: hidden;
+  margin: var(--spacing-4x);
+}
+
+.box__header {
+  background-color: var(--color-content-primary);
+  padding: var(--spacing-3x) var(--spacing-5x);
+}
+
+.box__content {
+  padding: var(--spacing-6x);
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .box__content {
+    padding: var(--spacing-7x);
+  }
+}
+
+.logo {
+  margin: auto;
+  display: block;
+}
+
+.heading {
+  font-weight: var(--font-weight-median);
+  font-size: var(--font-size-5x);
+  margin-top: var(--spacing-none);
+  line-height: 1em;
+}
+
+.copy {
+  margin: var(--spacing-none) var(--spacing-none) var(--spacing-5x);
+}
+
+.copy:last-child {
+  margin-bottom: var(--spacing-none);
+}
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <header class="box__header">
+        <img
+          class="logo"
+          src="https://i.imgur.com/nXaqAD8.png"
+          alt="Envato"
+          height="32"
+          width="140"
+        />
+      </header>
+      <div class="box__content">
+        <h2 class="heading">We're sorry.</h2>
+        <p class="copy">
+          Envato is temporarily unavailable.<br />
+          We're working on getting it fixed.
+        </p>
+        <p class="copy">
+          Check our
+          <a class="link" href="https://status.envato.com">status page</a> for
+          more information.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
